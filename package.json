@@ -2,17 +2,22 @@
   "name": "battleroyalerl",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {},
+  "main": "src/index.js",
+  "dependencies": {
+    "rot-js": "^2.0.3"
+  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
-    "jest": "^24.1.0"
+    "jest": "^24.1.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   },
   "scripts": {
     "test": "jest",
-    "build": "babel src -d lib --presets=@babel/env"
+    "build": "babel src -d lib --presets=@babel/env",
+    "webpack": "webpack --mode=development"
   },
   "repository": {
     "type": "git",
